@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://photok.app/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://photok.app/privacy/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://photok.app/privacy/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://photok.app/privacy/de/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://photok.app/privacy/" />
+  </url>
+
+  <url>
+    <loc>https://photok.app/privacy/de/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://photok.app/privacy/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://photok.app/privacy/de/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://photok.app/privacy/" />
+  </url>
+
+  <url>
+    <loc>https://photok.app/terms/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://photok.app/imprint/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://photok.app/imprint/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://photok.app/imprint/de/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://photok.app/imprint/" />
+  </url>
+
+  <url>
+    <loc>https://photok.app/imprint/de/</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://photok.app/imprint/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://photok.app/imprint/de/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://photok.app/imprint/" />
+  </url>
+
+</urlset>

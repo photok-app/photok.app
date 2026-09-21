@@ -1,0 +1,50 @@
+# Photok
+
+> Photok is a free, open-source private photo vault. It encrypts photos and videos on-device with AES-256, requires no account and no cloud upload, and is published under the Apache License 2.0. Optional premium features are available as "Photok Pro" via a one-time in-app purchase on Google Play.
+
+Key facts:
+
+- **What it is:** a mobile app (package id `dev.leonlatsch.photok`) that stores photos and videos in an encrypted local vault.
+- **Encryption:** AES-256. Files are decrypted only in memory while the app is in use; they are never written unprotected to disk.
+- **Privacy model:** no account, no cloud upload, no ads. Media never leaves the device.
+- **Analytics:** privacy-friendly, anonymized analytics via TelemetryDeck — disabled by default in open-source builds (F-Droid, GitHub), enabled by default in the Google Play build. Never used for advertising or cross-app tracking.
+- **License:** Apache License 2.0 for the core app. The Google Play build may include additional proprietary Photok Pro components not covered by that license.
+- **Author:** Leon Latsch, Germany. Contact: hello@photok.app
+- **Availability:** Google Play, F-Droid, IzzyOnDroid, GitHub Releases.
+- **Languages:** community-translated into 13 languages.
+- **Source code:** https://github.com/leonlatsch/Photok
+
+## Features
+
+- Private gallery — import photos and videos into an encrypted gallery and organize them into albums.
+- AES-256 encryption — every file is strongly encrypted; decryption happens only in memory.
+- Biometric unlock — open the vault with fingerprint authentication.
+- Encrypted backups — create and restore encrypted backups of the vault.
+- Auto-delete originals — optionally remove source files after import.
+- Share & export — share into the vault from other apps, or export files on your own terms.
+- Hide the app icon — optionally remove the launcher icon for extra discretion.
+- Intruder warnings (Photok Pro) — opt-in; takes a camera photo on a failed unlock attempt, stored locally only and never transmitted.
+
+## Pages
+
+- [Photok — home](https://photok.app/): overview, feature list, privacy stance and download links.
+- [Privacy Policy](https://photok.app/privacy/): what data is processed, how it differs between Google Play and open-source builds, TelemetryDeck details.
+- [Datenschutzerklärung (German)](https://photok.app/privacy/de/): German translation of the privacy policy.
+- [Terms of Use](https://photok.app/terms/): usage terms, open source vs. Photok Pro, data-loss disclaimer.
+- [Imprint](https://photok.app/imprint/): legal notice / contact details.
+- [Impressum (German)](https://photok.app/imprint/de/): German legal notice.
+
+## Download
+
+- [Google Play](https://play.google.com/store/apps/details?id=dev.leonlatsch.photok): includes optional Photok Pro in-app purchase.
+- [F-Droid](https://f-droid.org/packages/dev.leonlatsch.photok/): fully open-source build, analytics off by default.
+- [IzzyOnDroid](https://apt.izzysoft.de/fdroid/index/apk/dev.leonlatsch.photok): third-party F-Droid repository.
+- [GitHub Releases](https://github.com/leonlatsch/Photok/releases/latest): signed APKs directly from the project.
+
+## Project
+
+- [Source code on GitHub](https://github.com/leonlatsch/Photok): the core app, Apache License 2.0.
+- [License](https://github.com/leonlatsch/Photok/blob/main/LICENSE): Apache License 2.0.
+- [Contributing guide](https://github.com/leonlatsch/Photok/blob/main/CONTRIBUTING.md): how to contribute code or translations.
+- [Issue tracker](https://github.com/leonlatsch/Photok/issues): bug reports and feature requests.
+
