@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ – Photok</title>
+  <meta name="description" content="Answers to common questions about Photok: hiding photos and videos, albums, encryption, recovery, backups and Photok Pro." />
+  <link rel="icon" href="https://raw.githubusercontent.com/leonlatsch/Photok/main/fastlane/metadata/android/en-US/images/icon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Lobster&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="faq.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Photok?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Photok is a private vault app for your photos and videos. Everything you add is encrypted and stored only on your device. No account, no cloud upload and no ads." }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I hide photos and videos?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Tap Import in Photok and pick your photos and videos, or share them to Photok from any other app. Photok saves an encrypted copy in its private storage, so the files no longer show up in your regular gallery. You can let Photok delete the originals after importing." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I organize private photos into albums?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. You can create, rename and delete albums, add or remove photos and videos, import directly into an album, pin items to the top and sort by date, name or size." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I recover my photos if I lose access to Photok?",
+        "acceptedAnswer": { "@type": "Answer", "text": "If you forget your password, you can unlock Photok with your recovery phrase and set a new password. Without your password and your recovery phrase, nobody can recover your files, not even the Photok developers. If you lose your phone, only a backup stored somewhere else can bring your files back." }
+      },
+      {
+        "@type": "Question",
+        "name": "Are my photos uploaded to the cloud?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. Your photos and videos stay on your device and Photok has no cloud sync. Backups are files that you save wherever you choose." }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Photok encrypt photos with AES-256?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every photo and video is encrypted with AES-256 using a random key. That key is protected by your password, which is strengthened with PBKDF2. Your password itself is never stored, and decrypted content only exists in memory while the vault is unlocked." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Photok open source?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The core of the Photok Android app is open source under the Apache License 2.0 and available on GitHub. The Google Play version also includes the optional Photok Pro features, which are not open source." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can someone access my photos if they steal my phone?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Your files are encrypted and cannot be read without your password or recovery phrase. Photok locks automatically and blocks screenshots by default. No app can promise absolute security though: a weak password or an unlocked vault reduce this protection." }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I back up and restore my Photok vault?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Go to Settings, Advanced, Backup, confirm your password and choose where to save the backup file. To restore, tap Import, choose Restore a backup, select the file and enter the password that was set when the backup was created." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Photok Pro a subscription?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. Photok Pro is a one-time purchase on Google Play. It includes Brute-force Protection, Panic Lock, Intruder Warnings and all future Pro features." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between Photok Pro and the FOSS version?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Both share the same core app. Photok Pro is available in the Google Play version and adds extra security features. The FOSS version is the open-source build available on F-Droid and GitHub, without Pro features." }
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="faq-body">
+
+  <header class="nav">
+    <div class="nav-inner container">
+      <a href="/" class="nav-logo">
+        <img src="https://raw.githubusercontent.com/leonlatsch/Photok/main/fastlane/metadata/android/en-US/images/icon.png" alt="Photok icon" />
+        <span>Photok</span>
+      </a>
+      <nav class="nav-links">
+        <a href="/#features">Features</a>
+        <a href="/#privacy">Privacy</a>
+        <a href="/#download">Download</a>
+        <a href="https://github.com/leonlatsch/Photok" target="_blank" rel="noopener" class="nav-github">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          GitHub
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <header class="faq-hero">
+      <a href="/" class="back-link">← Back</a>
+      <h1>Frequently Asked Questions</h1>
+      <p>Everything you need to know about keeping your photos and videos private with Photok.</p>
+    </header>
+
+    <div class="faq-layout">
+      <aside class="faq-sidebar">
+        <nav aria-label="Questions">
+          <h2>Product &amp; Usage</h2>
+          <ul>
+            <li><a href="#what-is-photok">What is Photok?</a></li>
+            <li><a href="#hide-photos">How do I hide photos and videos?</a></li>
+            <li><a href="#albums">Can I organize private photos into albums?</a></li>
+            <li><a href="#recovery">Can I recover my photos if I lose access to Photok?</a></li>
+          </ul>
+          <h2>Privacy &amp; Security</h2>
+          <ul>
+            <li><a href="#cloud">Are my photos uploaded to the cloud?</a></li>
+            <li><a href="#encryption">Does Photok encrypt photos with AES-256?</a></li>
+            <li><a href="#open-source">Is Photok open source?</a></li>
+            <li><a href="#stolen-phone">Can someone access my photos if they steal my phone?</a></li>
+          </ul>
+          <h2>Backups &amp; Photok Pro</h2>
+          <ul>
+            <li><a href="#backup">How do I back up and restore my Photok vault?</a></li>
+            <li><a href="#pro-subscription">Is Photok Pro a subscription?</a></li>
+            <li><a href="#pro-vs-foss">What is the difference between Photok Pro and the FOSS version?</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <div class="faq-content">
+        <section class="faq-group">
+          <h2>Product &amp; Usage</h2>
+          <article class="faq-item" id="what-is-photok">
+            <h3>What is Photok?</h3>
+            <p>Photok is a private vault app for your photos and videos. Everything you add is encrypted and stored only on your device. There is no account to create, nothing is uploaded to a cloud, and there are no ads.</p>
+            <p>You can get Photok on <a href="https://play.google.com/store/apps/details?id=dev.leonlatsch.photok" target="_blank" rel="noopener">Google Play</a>. It is also available on <a href="https://f-droid.org/packages/dev.leonlatsch.photok/" target="_blank" rel="noopener">F-Droid</a> and <a href="https://github.com/leonlatsch/Photok/releases/latest" target="_blank" rel="noopener">GitHub</a>.</p>
+          </article>
+          <article class="faq-item" id="hide-photos">
+            <h3>How do I hide photos and videos?</h3>
+            <ul>
+              <li><strong>Import:</strong> tap <em>Import</em> in Photok, choose <em>Import new files</em> and select your photos and videos. If you do this inside an album, the files go straight into that album.</li>
+              <li><strong>Share:</strong> in any other app, tap <em>Share</em> and choose Photok. The files are added after you unlock your vault.</li>
+            </ul>
+            <p>Photok saves an encrypted copy of each file in its own private storage. Other apps, including your regular gallery, can't see or open these copies.</p>
+            <p>Your original files stay where they are, unless you turn on <em>Delete imported files</em> in the settings. Then Photok removes the originals after a successful import.</p>
+            <p>Photok supports common photo and video formats such as JPEG, PNG, GIF, WEBP, HEIC, MP4, MOV, MKV and WEBM.</p>
+            <p>To be even more discreet, you can hide the Photok icon itself with <em>Hide App</em> in the settings. Photok then opens from your phone's dial pad with a secret code.</p>
+          </article>
+          <article class="faq-item" id="albums">
+            <h3>Can I organize private photos into albums?</h3>
+            <p>Yes. In Photok you can:</p>
+            <ul>
+              <li>Create, rename and delete albums.</li>
+              <li>Add photos and videos to albums, or remove them again.</li>
+              <li>Import new files directly into an album.</li>
+              <li>Pin items to the top of an album.</li>
+              <li>Sort by date, name or size, in either direction. Each album remembers its own sorting.</li>
+              <li>Show your albums as a grid or a list.</li>
+            </ul>
+          </article>
+          <article class="faq-item" id="recovery">
+            <h3>Can I recover my photos if I lose access to Photok?</h3>
+            <p>When you set up Photok, you get a <strong>recovery phrase</strong> of 12 or 24 words. Keep it somewhere safe and away from your phone. You can write it down, copy it, save it as a file or save it as a QR code.</p>
+            <p>If you forget your password, tap <em>Forgot password</em> on the unlock screen and enter your recovery phrase. Photok unlocks, and you can then set a new password. Under <em>Settings → Recovery Phrase</em> you can view your phrase again or create a new one. A new phrase replaces the old one.</p>
+            <p>There are some limits to keep in mind:</p>
+            <ul>
+              <li>If you lose both your password and your recovery phrase, your files <strong>cannot be recovered</strong>. Photok has no server and no master key, so nobody can unlock your vault for you, not even the developers.</li>
+              <li>The recovery phrase only unlocks Photok on the device where it was created. A backup always needs the password that was set when the backup was created.</li>
+              <li>If your phone is lost or broken, only a <a href="#backup">backup</a> that you stored somewhere else can bring your files back.</li>
+              <li>If you change your phone's biometrics (for example, add a new fingerprint), biometric unlock stops working. You can still unlock with your password and turn biometric unlock on again.</li>
+            </ul>
+          </article>
+        </section>
+        <section class="faq-group">
+          <h2>Privacy &amp; Security</h2>
+          <article class="faq-item" id="cloud">
+            <h3>Are my photos uploaded to the cloud?</h3>
+            <p>No. Your photos and videos are stored only on your device, and Photok does not sync them anywhere.</p>
+            <p>Backups are different from cloud sync. When you create a backup, Photok saves one file wherever you choose. If you choose a cloud folder, the backup ends up there, but your photos inside it stay encrypted. Photok never uploads backups on its own.</p>
+            <p>Photok uses anonymous usage statistics to improve the app. These never include your photos, videos or file names. Read the <a href="/privacy">Privacy Policy</a> for details.</p>
+          </article>
+          <article class="faq-item" id="encryption">
+            <h3>Does Photok encrypt photos with AES-256?</h3>
+            <p>Yes. Every photo, video and thumbnail is encrypted with AES-256 before it is saved. This is how it works:</p>
+            <ul>
+              <li>Your vault has its own random encryption key. All your files are encrypted with this key.</li>
+              <li>This key is protected by your password. Photok strengthens your password with PBKDF2, which makes guessing it much slower. Your recovery phrase and biometric unlock protect the same key in the same way.</li>
+              <li>Your password itself is never stored, not even as a hash. Photok only checks whether it can unlock the vault key.</li>
+              <li>Files are decrypted in memory only while you view them. Unencrypted copies are never saved to storage.</li>
+              <li>Changing your password is instant, because only the vault key needs to be protected again. Your files are not re-encrypted.</li>
+            </ul>
+            <p>The encryption is only as strong as your password. A long, unique password matters more than anything else. For the technical details, see <a href="https://github.com/leonlatsch/Photok/blob/main/ENCRYPTION.md" target="_blank" rel="noopener">ENCRYPTION.md</a> on GitHub.</p>
+          </article>
+          <article class="faq-item" id="open-source">
+            <h3>Is Photok open source?</h3>
+            <p>The core of the Photok Android app is open source under the <a href="https://github.com/leonlatsch/Photok/blob/main/LICENSE" target="_blank" rel="noopener">Apache License 2.0</a>. You can read, verify and contribute to the code on <a href="https://github.com/leonlatsch/Photok" target="_blank" rel="noopener">GitHub</a>.</p>
+            <p>The Google Play version uses the same core and also includes the optional <a href="#pro-subscription">Photok Pro</a> features. Those features are not open source. A fully open-source version without Photok Pro is available on F-Droid and GitHub.</p>
+          </article>
+          <article class="faq-item" id="stolen-phone">
+            <h3>Can someone access my photos if they steal my phone?</h3>
+            <p>Photok is built for exactly this situation:</p>
+            <ul>
+              <li>Your files are encrypted and can't be read without your password or recovery phrase.</li>
+              <li>Your files are kept in Photok's private storage, where other apps can't reach them.</li>
+              <li>Photok locks itself after it has been in the background for a while. You choose how long under <em>Automatic Lock Timeout</em>.</li>
+              <li>Screenshots and screen recordings of Photok are blocked by default.</li>
+            </ul>
+            <p>With <a href="#pro-subscription">Photok Pro</a> you get more protection: you can limit wrong password attempts, lock the vault instantly by shaking or flipping your phone, and take a photo of anyone who enters a wrong password.</p>
+            <p>Still, no app can promise absolute security. Your protection is weaker if your password is easy to guess, if someone takes your phone while the vault is unlocked, or if automatic lock is set to <em>Never</em>. Malware on a compromised device is also a risk. Use a strong password, keep the lock timeout short, and keep a backup.</p>
+          </article>
+        </section>
+        <section class="faq-group">
+          <h2>Backups &amp; Photok Pro</h2>
+          <article class="faq-item" id="backup">
+            <h3>How do I back up and restore my Photok vault?</h3>
+            <h4>Create a backup</h4>
+            <ol>
+              <li>Open Photok and go to <em>Settings → Advanced → Backup</em>.</li>
+              <li>Confirm your password.</li>
+              <li>Choose where to save the backup file.</li>
+              <li>Copy the file to a safe place outside your phone, for example a computer or a USB drive.</li>
+            </ol>
+            <h4>Restore a backup</h4>
+            <ol>
+              <li>Install Photok and set up your vault, or open your existing vault.</li>
+              <li>Tap <em>Import</em> and choose <em>Restore a backup</em>.</li>
+              <li>Select your backup file. Photok shows what the backup contains.</li>
+              <li>Enter the password that was set <strong>when the backup was created</strong>.</li>
+              <li>Choose what should happen to photos that are already in your vault: <em>Skip them</em> or <em>Import them again</em>.</li>
+            </ol>
+            <p>Good to know:</p>
+            <ul>
+              <li>Restoring adds the files to your vault. Nothing that is already there gets deleted.</li>
+              <li>Your photos and videos are encrypted inside the backup. File names, album names and dates are not, so store your backup somewhere you trust.</li>
+              <li>A backup can only be opened with Photok, not with a gallery app.</li>
+              <li>Photok does not create backups automatically. Make a new one from time to time.</li>
+              <li>Backups from older versions of Photok can still be restored.</li>
+            </ul>
+          </article>
+          <article class="faq-item" id="pro-subscription">
+            <h3>Is Photok Pro a subscription?</h3>
+            <p>No. Photok Pro is a <strong>one-time purchase</strong> in the Google Play version. You pay once and keep it. The price is shown in the app before you buy. Photok Pro includes:</p>
+            <ul>
+              <li><strong>Brute-force Protection:</strong> choose how many wrong password attempts are allowed. After that, Photok either locks for 30 minutes or erases all files.</li>
+              <li><strong>Panic Lock:</strong> lock Photok instantly by shaking your phone or turning it face down.</li>
+              <li><strong>Intruder Warnings:</strong> Photok takes a photo with the front camera when someone enters a wrong password. These photos stay on your device.</li>
+              <li><strong>All future Pro features</strong> at no extra cost.</li>
+            </ul>
+            <p>Payments and refunds are handled by Google Play. See the <a href="/terms">Terms of Use</a> for details.</p>
+          </article>
+          <article class="faq-item" id="pro-vs-foss">
+            <h3>What is the difference between Photok Pro and the FOSS version?</h3>
+            <p>Both use the same core app, with the same encryption, albums, backups, recovery phrase and biometric unlock.</p>
+            <p><strong>Photok on Google Play</strong> is the main version. It also lets you unlock <a href="#pro-subscription">Photok Pro</a> for extra security features.</p>
+            <p><strong>The FOSS version</strong> on F-Droid and GitHub is built only from the open-source code. It does not include Photok Pro.</p>
+          </article>
+        </section>
+
+        <div class="faq-contact">
+          <h2>Still have questions?</h2>
+          <p>Write to <a href="mailto:hello@photok.app">hello@photok.app</a> or join the community on <a href="https://reddit.com/r/photok" target="_blank" rel="noopener">r/photok</a>.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="https://raw.githubusercontent.com/leonlatsch/Photok/main/fastlane/metadata/android/en-US/images/icon.png" alt="Photok" />
+        <span>Photok</span>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/leonlatsch/Photok" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/leonlatsch/Photok/blob/main/LICENSE" target="_blank" rel="noopener">License</a>
+        <a href="https://github.com/leonlatsch/Photok/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">Contributing</a>
+        <a href="https://github.com/leonlatsch/Photok/issues" target="_blank" rel="noopener">Issues</a>
+        <a href="/faq">FAQ</a>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Use</a>
+        <a href="/imprint">Imprint</a>
+      </div>
+      <p class="footer-copy">© 2020–2026 Leon Latsch</p>
+    </div>
+  </footer>
+
+  <script src="faq.js"></script>
+</body>
+</html>
