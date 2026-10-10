@@ -1,0 +1,54 @@
+name: Build blog
+
+# Turns content/blog/*.md into static HTML in blog/ and commits it back to main,
+# which GitHub Pages then deploys. Only runs on pushes to main (never on fork PRs),
+# so the write token is never exposed to untrusted code.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'content/blog/**'
+      - 'templates/**'
+      - 'scripts/**'
+      - 'sitemap.xml'
+      - '.github/workflows/build-blog.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-blog
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: scripts/package-lock.json
+
+      - name: Build blog
+        working-directory: scripts
+        run: |
+          npm ci
+          npm run build
+
+      - name: Commit generated files
+        run: |
+          git add -A blog sitemap.xml
+          if git diff --cached --quiet; then
+            echo "Blog output already up to date."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore(blog): build posts from ${GITHUB_SHA::7}"
+          # Pushes made with GITHUB_TOKEN don't trigger workflows, so this can't loop
+          git pull --rebase
+          git push

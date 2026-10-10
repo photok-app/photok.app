@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog – Photok</title>
+  <meta name="description" content="News, guides and behind-the-scenes posts about Photok, the private photo vault for Android." />
+  <link rel="canonical" href="{{url}}" />
+  <link rel="alternate" type="application/rss+xml" title="Photok Blog" href="/blog/feed.xml" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Photok" />
+  <meta property="og:title" content="Photok Blog" />
+  <meta property="og:description" content="News, guides and behind-the-scenes posts about Photok, the private photo vault for Android." />
+  <meta property="og:url" content="{{url}}" />
+  <link rel="icon" href="https://raw.githubusercontent.com/leonlatsch/Photok/main/fastlane/metadata/android/en-US/images/icon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Lobster&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/blog/blog.css" />
+  <script type="application/ld+json">{{json_ld}}</script>
+</head>
+<body class="blog-body">
+  <!-- {{generated_marker}} -->
+
+{{nav}}
+
+  <main class="container">
+    <header class="blog-hero">
+      <a href="/" class="back-link">← Back</a>
+      <h1>Blog</h1>
+      <p>News, guides and behind-the-scenes posts about Photok.</p>
+    </header>
+
+    <div class="blog-list">
+{{posts}}
+    </div>
+  </main>
+
+{{footer}}
+</body>
+</html>

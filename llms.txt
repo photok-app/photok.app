@@ -28,6 +28,7 @@ Key facts:
 ## Pages
 
 - [Photok — home](https://photok.app/): overview, feature list, privacy stance and download links.
+- [Blog](https://photok.app/blog/): news, guides and behind-the-scenes posts about Photok. RSS feed: https://photok.app/blog/feed.xml
 - [FAQ](https://photok.app/faq/): answers about hiding and organizing media, encryption, recovery phrase, backups and restore, Photok Pro.
 - [Privacy Policy](https://photok.app/privacy/): what data is processed, how it differs between Google Play and open-source builds, TelemetryDeck details.
 - [Datenschutzerklärung (German)](https://photok.app/privacy/de/): German translation of the privacy policy.

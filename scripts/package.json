@@ -1,0 +1,13 @@
+{
+  "name": "photok-blog-build",
+  "private": true,
+  "description": "Build-time generator for the photok.app blog. Nothing here ships to the browser.",
+  "type": "module",
+  "scripts": {
+    "build": "node build-blog.mjs"
+  },
+  "dependencies": {
+    "marked": "18.1.0",
+    "yaml": "2.9.1"
+  }
+}
