@@ -10,7 +10,7 @@ author: Leon Latsch
 
 # Optional
 # updated: 2026-10-20            # YYYY-MM-DD, shown as "Updated …" and used as lastmod
-# author_url: https://github.com/leonlatsch
+# author_url: https://leonlatsch.dev
 # tags: [privacy, encryption]
 # image: https://example.com/cover.png   # cover image + social preview
 # slug: custom-url-slug          # defaults to the file name -> /blog/<slug>/
