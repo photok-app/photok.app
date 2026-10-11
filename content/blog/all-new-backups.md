@@ -17,12 +17,26 @@ author_url: https://leonlatsch.dev
 # slug: custom-url-slug          # defaults to the file name -> /blog/<slug>/
 ---
 
-## After 6 years of bad backup experiences. We have rebuild it from the ground up
+## Feature creep made me do this
 
-With Photok 3.5.0 we've redesigned the backup and restore experience from the ground up. All while maintaining 100% backwards compatibility with your old backups. Restoreing a backup is now a guided, full-screen process, with clearer information at every step.
+When Photok released in 2020, I had to squeese in some kind of backup feature before posting it to the Play Store.
+At least that was what I belived.
+I made it a simple ZIP archive with all the encrypted files and a JSON dump of the app database.
 
-## A clearer restore process
+When it came to restoring backups, I had to realize that it's a complex flow that would need a compelx UI.
+This is when I decided to let future me handle this problem after releasing `1.0.0`.
 
-Before restoring, Photok shows you whats inside your backup, including its size, media count, albums, and encryption method. It also checks wether there's enough storage space available. 
+## 6 Years later
 
-Once the restore begins, you'll see live progress, transfer seed and an estimate of the time remaining.
+A lot has happened to Photok and its backups since then. Under the hood, the backup restoration was updated quite often.
+
+Videos were introduced, albums were added and the internal file format changed twice.
+
+With the big migration to Photok `2.0.0` most bugs with the backup system have been uncovered, since every user had to go through the process once.
+
+> Essentially a forced user test when I think about it. But it worked.
+
+In terms of the user interface for restoring backups: **Nothing** has changed since 2020. Still the same dialog with the ever loading spinner. Topped of with a error message as precise at it can get: *Some elements could not get processed.*
+
+Eventually I found the bravery to tackle this problem with the apps migration to Jetpack Compose. The restore backup UI was one of the last remaining pieces.
+I decided: If im going to touch that thing, I make it good this time.
