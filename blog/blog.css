@@ -1,14 +1,14 @@
 /* Blog pages – builds on ../style.css, mirrors faq/faq.css */
 
 .blog-body .nav {
-  background: rgba(255, 255, 255, 0.88);
-  border-bottom: 1px solid #edf2f1;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  border-bottom: 1px solid var(--border);
 }
 
 .back-link {
   font-size: 0.9rem;
   font-weight: 600;
-  color: var(--primary-dark);
+  color: var(--primary);
   transition: opacity var(--transition);
 }
 
@@ -17,7 +17,7 @@
 /* --- Hero --- */
 .blog-hero {
   padding: 72px 0 56px;
-  border-bottom: 1px solid #edf2f1;
+  border-bottom: 1px solid var(--border);
 }
 
 .blog-hero h1 {
@@ -45,7 +45,7 @@
 }
 
 .blog-meta a {
-  color: var(--primary-dark);
+  color: var(--primary);
   font-weight: 600;
 }
 
@@ -60,8 +60,8 @@
 .blog-tags li {
   font-size: 0.78rem;
   font-weight: 600;
-  color: var(--primary-dark);
-  background: rgba(80, 201, 195, 0.12);
+  color: var(--primary);
+  background: var(--primary-container);
   padding: 4px 12px;
   border-radius: 100px;
 }
@@ -121,7 +121,7 @@
   padding: 48px 0 120px;
   font-size: 1.06rem;
   line-height: 1.75;
-  color: #3a3a3c;
+  color: var(--text-secondary);
   overflow-wrap: break-word;
 }
 
@@ -158,14 +158,14 @@
 .blog-prose strong { color: var(--text); font-weight: 600; }
 
 .blog-prose a {
-  color: var(--primary-dark);
+  color: var(--primary);
   text-decoration: underline;
-  text-decoration-color: rgba(49, 159, 153, 0.35);
+  text-decoration-color: color-mix(in srgb, var(--primary) 35%, transparent);
   text-underline-offset: 3px;
   transition: text-decoration-color var(--transition);
 }
 
-.blog-prose a:hover { text-decoration-color: var(--primary-dark); }
+.blog-prose a:hover { text-decoration-color: var(--primary); }
 
 .blog-prose ul,
 .blog-prose ol {
@@ -176,7 +176,7 @@
 }
 
 .blog-prose li::marker {
-  color: var(--primary-dark);
+  color: var(--primary);
   font-weight: 700;
 }
 
@@ -190,14 +190,14 @@
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   font-size: 0.88em;
   background: var(--surface);
-  border: 1px solid #e8efee;
+  border: 1px solid var(--border);
   border-radius: 6px;
   padding: 2px 6px;
 }
 
 .blog-prose pre {
   background: var(--surface);
-  border: 1px solid #e8efee;
+  border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   padding: 18px 20px;
   overflow-x: auto;
@@ -219,7 +219,7 @@
 
 .blog-prose hr {
   border: none;
-  border-top: 1px solid #e8efee;
+  border-top: 1px solid var(--border);
   margin: 48px 0;
 }
 
@@ -235,7 +235,7 @@
 .blog-prose td {
   text-align: left;
   padding: 10px 14px;
-  border-bottom: 1px solid #e8efee;
+  border-bottom: 1px solid var(--border);
 }
 
 .blog-prose th {

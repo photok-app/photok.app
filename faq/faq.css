@@ -1,11 +1,11 @@
 .faq-body .nav {
-  background: rgba(255, 255, 255, 0.88);
-  border-bottom: 1px solid #edf2f1;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  border-bottom: 1px solid var(--border);
 }
 
 .faq-hero {
   padding: 72px 0 56px;
-  border-bottom: 1px solid #edf2f1;
+  border-bottom: 1px solid var(--border);
 }
 
 .faq-hero h1 {
@@ -49,7 +49,7 @@
 
 .faq-sidebar ul {
   list-style: none;
-  border-left: 1px solid #e8efee;
+  border-left: 1px solid var(--border);
 }
 
 .faq-sidebar a {
@@ -66,7 +66,7 @@
 .faq-sidebar a:hover { color: var(--text); }
 
 .faq-sidebar a.active {
-  color: var(--primary-dark);
+  color: var(--primary);
   border-left-color: var(--primary);
   font-weight: 600;
 }
@@ -80,13 +80,13 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.07em;
-  color: var(--primary-dark);
+  color: var(--primary);
   margin-bottom: 8px;
 }
 
 .faq-item {
   padding: 32px 0;
-  border-bottom: 1px solid #edf2f1;
+  border-bottom: 1px solid var(--border);
   scroll-margin-top: 80px;
 }
 
@@ -110,7 +110,7 @@
 .faq-item li {
   font-size: 1.04rem;
   line-height: 1.7;
-  color: #3a3a3c;
+  color: var(--text-secondary);
 }
 
 .faq-item p + p { margin-top: 14px; }
@@ -125,21 +125,21 @@
 }
 
 .faq-item li::marker {
-  color: var(--primary-dark);
+  color: var(--primary);
   font-weight: 700;
 }
 
 .faq-item strong { color: var(--text); font-weight: 600; }
 
 .faq-item a {
-  color: var(--primary-dark);
+  color: var(--primary);
   text-decoration: underline;
-  text-decoration-color: rgba(49, 159, 153, 0.35);
+  text-decoration-color: color-mix(in srgb, var(--primary) 35%, transparent);
   text-underline-offset: 3px;
   transition: text-decoration-color var(--transition);
 }
 
-.faq-item a:hover { text-decoration-color: var(--primary-dark); }
+.faq-item a:hover { text-decoration-color: var(--primary); }
 
 .faq-contact {
   margin-top: 72px;
@@ -161,7 +161,7 @@
 }
 
 .faq-contact a {
-  color: var(--primary-dark);
+  color: var(--primary);
   font-weight: 600;
 }
 
@@ -191,7 +191,7 @@
 .back-link {
   font-size: 0.9rem;
   font-weight: 600;
-  color: var(--primary-dark);
+  color: var(--primary);
   transition: opacity var(--transition);
 }
 
