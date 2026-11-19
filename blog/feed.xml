@@ -5,7 +5,15 @@
     <link>https://photok.app/blog/</link>
     <description>News, guides and behind-the-scenes posts about Photok.</description>
     <language>en</language>
+    <lastBuildDate>Thu, 19 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://photok.app/blog/feed.xml" rel="self" type="application/rss+xml" />
-
+    <item>
+      <title>Black Friday Sale: 50% Off Photok Pro</title>
+      <link>https://photok.app/blog/black-friday-photok-pro-sale/</link>
+      <guid isPermaLink="true">https://photok.app/blog/black-friday-photok-pro-sale/</guid>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 GMT</pubDate>
+      <dc:creator>Leon Latsch</dc:creator>
+      <description>Get Photok Pro for half the price from Black Friday to Cyber Monday (November 27 to 30, 2026). A one-time purchase, no subscription.</description>
+    </item>
   </channel>
 </rss>
