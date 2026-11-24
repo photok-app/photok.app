@@ -368,6 +368,17 @@ a { color: inherit; text-decoration: none; }
   margin-bottom: 8px;
   color: var(--text);
 }
+.feature-tag {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--primary-container);
+  color: var(--primary);
+  font-size: 0.68rem;
+  font-weight: 600;
+  vertical-align: middle;
+}
 .feature-card p {
   font-size: 0.88rem;
   color: var(--text-secondary);
@@ -500,6 +511,10 @@ a { color: inherit; text-decoration: none; }
   width: auto;
   display: block;
 }
+.download-badges img.badge-app-store {
+  height: 50px;
+  margin: 12px 10px;
+}
 
 /* --- FOOTER --- */
 .footer {
@@ -564,6 +579,7 @@ a { color: inherit; text-decoration: none; }
 
   .features-grid { grid-template-columns: 1fr; }
   .download-badges img { height: 62px; }
+  .download-badges img.badge-app-store { height: 42px; margin: 10px 8px; }
 
   /* Nav: stop the logo and links from colliding on narrow screens */
   .nav-logo { flex-shrink: 0; font-size: 1.05rem; }
@@ -586,6 +602,7 @@ a { color: inherit; text-decoration: none; }
   .nav-link { display: none; }
 
   .download-badges img { height: 54px; }
+  .download-badges img.badge-app-store { height: 36px; margin: 9px 7px; }
   .hero h1 { font-size: 2.2rem; }
 }
 
