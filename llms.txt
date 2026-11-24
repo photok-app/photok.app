@@ -4,6 +4,7 @@
 
 Key facts:
 
+- **Slogan:** A safe place for your photos.
 - **What it is:** a mobile app for Android and iOS (Android package id `dev.leonlatsch.photok`) that stores photos and videos in an encrypted local vault.
 - **Encryption:** AES-256. Files are decrypted only in memory while the app is in use; they are never written unprotected to disk.
 - **Privacy model:** no account, no cloud upload, no ads. Media never leaves the device.
@@ -39,7 +40,7 @@ Key facts:
 
 ## Download
 
-- [Apple App Store](https://apps.apple.com/): the iOS app.
+- [Apple App Store](https://apps.apple.com/app/id6824465126): the iOS app.
 - [Google Play](https://play.google.com/store/apps/details?id=dev.leonlatsch.photok): includes optional Photok Pro in-app purchase.
 - [F-Droid](https://f-droid.org/packages/dev.leonlatsch.photok/): fully open-source build, analytics off by default.
 - [IzzyOnDroid](https://apt.izzysoft.de/fdroid/index/apk/dev.leonlatsch.photok): third-party F-Droid repository.
