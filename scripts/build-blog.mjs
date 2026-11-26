@@ -26,6 +26,8 @@ const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
 
 // --- helpers ---
 
+const absoluteUrl = (url) => (url.startsWith('/') ? `${SITE_URL}${url}` : url);
+
 const escapeHtml = (value) => String(value)
   .replace(/&/g, '&amp;')
   .replace(/</g, '&lt;')
@@ -108,6 +110,7 @@ async function loadPosts() {
       updated,
       tags,
       image: data.image ? String(data.image) : null,
+      imageDark: data.image_dark ? String(data.image_dark) : null,
       readingMinutes: Math.max(1, Math.round(words / 200)),
       html: marked.parse(body).trim(),
     });
@@ -130,9 +133,17 @@ function renderPost(post, templates) {
   const tags = post.tags.length
     ? `      <ul class="blog-tags">${post.tags.map((t) => `<li>${escapeHtml(t)}</li>`).join('')}</ul>`
     : '';
-  const cover = post.image
-    ? `    <img class="blog-cover" src="${escapeHtml(post.image)}" alt="" />`
-    : '';
+  let cover = '';
+  if (post.image && post.imageDark) {
+    cover = [
+      '    <picture>',
+      `      <source srcset="${escapeHtml(post.imageDark)}" media="(prefers-color-scheme: dark)" />`,
+      `      <img class="blog-cover" src="${escapeHtml(post.image)}" alt="" />`,
+      '    </picture>',
+    ].join('\n');
+  } else if (post.image) {
+    cover = `    <img class="blog-cover" src="${escapeHtml(post.image)}" alt="" />`;
+  }
 
   const author = { '@type': 'Person', name: post.author };
   if (post.authorUrl) author.url = post.authorUrl;
@@ -142,7 +153,7 @@ function renderPost(post, templates) {
     description: escapeHtml(post.description),
     author: escapeHtml(post.author),
     url: post.url,
-    image: escapeHtml(post.image ?? DEFAULT_IMAGE),
+    image: escapeHtml(post.image ? absoluteUrl(post.image) : DEFAULT_IMAGE),
     twitter_card: post.image ? 'summary_large_image' : 'summary',
     date: post.date,
     modified: post.updated ?? post.date,
@@ -162,7 +173,7 @@ function renderPost(post, templates) {
       dateModified: post.updated ?? post.date,
       author,
       publisher: { '@type': 'Organization', name: 'Photok', logo: { '@type': 'ImageObject', url: DEFAULT_IMAGE } },
-      image: post.image ?? DEFAULT_IMAGE,
+      image: post.image ? absoluteUrl(post.image) : DEFAULT_IMAGE,
       mainEntityOfPage: post.url,
       ...(post.tags.length && { keywords: post.tags.join(', ') }),
     }),

@@ -26,7 +26,7 @@ The partials are only used by blog pages. The other pages (`index.html`, `faq/`,
 1. Copy `content/blog/_template.md` to `content/blog/<slug>.md`. The file name is the URL: `/blog/<slug>/`. Slugs must match `^[a-z0-9]+(-[a-z0-9]+)*$`.
 2. Front matter:
    - Required: `title`, `description`, `date` (`YYYY-MM-DD`), `author`
-   - Optional: `updated` (`YYYY-MM-DD`), `author_url`, `tags` (list), `image` (cover and social preview), `slug` (overrides the file name), `draft: true` (excluded from the build, but **still public on GitHub**)
+   - Optional: `updated` (`YYYY-MM-DD`), `author_url`, `tags` (list), `image` (cover and social preview; use a site path like `/images/blog/<slug>.png`, made absolute for `og:image`), `image_dark` (cover shown in dark mode, needs `image`), `slug` (overrides the file name), `draft: true` (excluded from the build, but **still public on GitHub**)
 3. Body: Markdown. Start sections at `##`, because the title is already the page's `h1`. Reading time is computed at ~200 words/min.
 4. Example post: `content/blog/how-to-back-up-photok.md`.
 

@@ -12,7 +12,8 @@ author: Leon Latsch
 # updated: 2026-10-20            # YYYY-MM-DD, shown as "Updated …" and used as lastmod
 # author_url: https://leonlatsch.dev
 # tags: [privacy, encryption]
-# image: https://example.com/cover.png   # cover image + social preview
+# image: /images/blog/<slug>.png   # cover image + social preview
+# image_dark: /images/blog/<slug>-dark.png   # cover in dark mode (needs image)
 # slug: custom-url-slug          # defaults to the file name -> /blog/<slug>/
 # draft: true                    # skip when building (still public in the repo!)
 ---

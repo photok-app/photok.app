@@ -5,6 +5,8 @@ date: 2026-11-19
 author: Leon Latsch
 author_url: https://leonlatsch.dev
 tags: [sale, photok-pro]
+image: /images/blog/black-friday-2026.png
+image_dark: /images/blog/black-friday-2026-dark.png
 ---
 
 From **Black Friday to Cyber Monday (November 27 to 30, 2026)**, Photok Pro is **50% off** on Google Play. If you've been thinking about upgrading your private photo vault, this is the best time to do it.
